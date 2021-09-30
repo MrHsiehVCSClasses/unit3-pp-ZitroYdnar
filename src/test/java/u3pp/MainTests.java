@@ -28,7 +28,7 @@ public class MainTests {
 
         String[] studentText = tapSystemOut(() -> {
             withTextFromSystemIn("100", "1580", "2020", "STOP").execute(() -> Main.main(null));
-        }).split("\s");
+        }).split("\\s");
 
        assertArrayEquals(expectedText, studentText);
     }
