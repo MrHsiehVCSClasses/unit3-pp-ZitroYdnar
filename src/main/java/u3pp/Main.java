@@ -14,7 +14,7 @@ class Main {
 
 		//YOUR CODE HERE
 Scanner sc = new Scanner(System.in);
-		System.out.println("Enter a year (or enter STOP to end): ");
+		System.out.print("Enter a year (or enter STOP to end): ");
 		String input = sc.nextLine();
 
 		while (!input.toUpperCase().equals("STOP")) {
@@ -23,10 +23,10 @@ Scanner sc = new Scanner(System.in);
 			int year = Integer.parseInt(input);
 		if (LeapYear.isLeapYear(year))
 		{
-		  System.out.print(year + " is a leap year");
+		  System.out.println(year + " is a leap year");
 		}
 		else{
-		  System.out.print(year + " is not a leap year");
+		  System.out.println(year + " is not a leap year");
 		}
 			
 			System.out.print("Enter a year (or enter STOP to end): ");
